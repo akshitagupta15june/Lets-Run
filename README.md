@@ -1,31 +1,39 @@
+## Inspiration
 
-> Open this page at [https://akshitagupta15june.github.io/microbit-step-counter/](https://akshitagupta15june.github.io/microbit-step-counter/)
+Monitoring your steps and calories burned while walking with a step tracker immediately takes the guesswork out of your fitness program, and it’s something you can just turn on and forget about. 
 
-## Use as Extension
+With a step counter, not only can you track your goals, but you can set new ones too. If increasing your heart rate is part of your current fitness routine, set a specific number of steps that you must complete within a certain time frame.
 
-This repository can be added as an **extension** in MakeCode.
+Count your steps and track your workouts with Let's Run.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/akshitagupta15june/microbit-step-counter** and import
+## What it does
 
-## Edit this project ![Build status badge](https://github.com/akshitagupta15june/microbit-step-counter/workflows/MakeCode/badge.svg)
+Let's Run is made using micro:bit which is a pocket-sized computer that lets you get creative with digital technology.
 
-To edit this repository in MakeCode.
+Micro:bit has an in built accelerometer. The accelerometer on the micro:bit detects the acceleration (in milli-g) in 3 planes: x and y (the horizontal planes), and z (the vertical plane). As well as detecting acceleration, accelerometers can also detect orientation, which is used in smart phones and tablets to rotate content as you tilt the device.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/akshitagupta15june/microbit-step-counter** and click import
+If the acceleration is greater than (>) 1500, the steps variable is increased by one and show the step count on the LED display output. 1500 is the threshold – the point at which a movement will trigger a step to be counted.
 
-## Blocks preview
+Lets say if the goal is 7k steps per day. In this case, for every 100 steps done, one LED will starts to glow. As we progress for every 1000 steps you would see one row fully ON and later starts filling up the next column. 
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## How we built it
 
-![A rendered view of the blocks](https://github.com/akshitagupta15june/microbit-step-counter/raw/master/.github/makecode/blocks.png)
+micro: bit and optional battery pack is used to make this device.
 
-#### Metadata (used for search, rendering)
+## Challenges we ran into
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+There was a bit of challenge while fixing the device on our shoe but I was able to fix it.
+
+## Accomplishments that we're proud of
+
+My greatest accomplishment was making a device that can track your workouts and steps rather than carrying a mobile phone during a walk or sprint.
+
+## What we learned
+
+I learned about micro:bit functionalities as well as programming in GNAT Studio. I also learned how to apply thresholds to sensor data to trigger events like increasing a step counter
+
+## What's next for Let's Run
+
+The device is powered up using 2x 1.5V AAA batteries and with this it is expected to last for a month. The brightness of LED can be reduced more in order to get long lasting performance.
+
+An application that displays real time data about a week's worth of workouts and steps.
